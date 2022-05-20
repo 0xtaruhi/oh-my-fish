@@ -20,7 +20,7 @@ function omf.packages.install -a name_or_url
     set name (omf.packages.name $name_or_url)
     set branch ""
     if string match -qi -r "^[a-z\d-]+/[a-z\d\-\._]+\$" $name_or_url
-      set url "https://github.com/$name_or_url"
+      set url "git@github.com:$name_or_url"
     else
       set url $name_or_url
     end
